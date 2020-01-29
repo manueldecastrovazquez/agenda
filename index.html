@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bienvenido</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css" >
+</head>
+<body>
+<div class="container">
+<div class="row">
+     <div class="col">
+        <div class="jumbotron">
+         <h1  class="display-2">Bienvenido a la web. <span class="badge badge-pill badge-danger">Nueva</span></h1>
+         </div>
+    </div>
+</div>
+<div class="alert alert-success" role="alert">
+  Este es el texto que nos marca una alerta primary!
+</div>
+ <figure class="figure">
+  <img src="img/logo.png" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption text-center">IES Ribera del Tajo</figcaption>
+</figure>
+  <!-- Formulario de entrada: Login -->
+<div class="row justify-content-center">
+   <div class="col-sm-6">
+    <h2>Introduzca correo y contraseña para entrar</h2>
+    <form action="login.php" method="post">
+    <div class="form-group">
+        <label for="correo">Correo</label>
+        <input class="form-control" type="email" name="correo" id="correo">
+        </div>
+      <div class="form-group">
+          <label for="pwd">Contraseña </label>
+          <input type="password" class="form-control" name="pwd" id="pwd">
+        </div>
+          <input type="submit" value="Entrar">
+    </form>
+   </div>
+</div>
+<br><br><br>
+  <!-- Formulario de registro -->  
+<div class="row">
+  <div class="col"> 
+  <h2>Complete los datos de registro</h2>
+  <form action="insert_user.php" method="post">
+    Nombre : <input type="text" size="30" name="nombre"><br>
+    Primer apellido : <input type="text" size="30" name="ape1"><br>
+    Segundo apellido : <input type="text" size="30" name="ape2"><br>
+    Correo : <input type="email" name="correo" ><br>
+    Contraseña : <input type="password" name="pwd"><br>
+    <input type="submit" value="Registrar">
+  </form>
+  </div>
+</div>
+</div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js" ></script>
+</body>
+</html>
